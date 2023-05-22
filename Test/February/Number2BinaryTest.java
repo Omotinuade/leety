@@ -12,14 +12,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class Number2BinaryTest {
     @Test
     public void testThatMethodNumberToBinaryIsWorking() {
-        int number = 27;
+        int number = 234;
         String result = Number2Binary.numberConversion(number);
         assertEquals("11011", result);
     }
 
     @Test
     public void testThatMethodBinaryToNumberIsWorking() {
-        String binary = "11011";
+        String binary = "1101";
         int result = Number2Binary.binaryConversion(binary);
         assertEquals(27, result);
     }
